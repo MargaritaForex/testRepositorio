@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5F7F9">
+
+      <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_principal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+    <ImageView
+        android:id="@+id/logo_principal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/jin"
+        app:layout_constraintEnd_toStartOf="@+id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imagen_inicio"
+        android:layout_width="245dp"
+        android:layout_height="168dp"
+        android:src="@drawable/nnn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sports_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPORTS SHOP"
+        android:textColor="#0C054D"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/button_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen_inicio" />
+
+
+    <Button
+        android:id="@+id/button_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_welcome"
+        android:layout_marginVertical="30dp"
+        android:text="WELCOME"
+        android:textColor="#0C054D"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/cuadro1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
+        app:layout_constraintStart_toStartOf="@id/guide"
+       app:layout_constraintTop_toBottomOf="@id/sports_shop"/>
+
+    <Button
+        android:id="@+id/retornar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/boton_welcome"
+        android:onClick="onClick"
+        android:text="RETURN"
+        android:textColor="#0C054D"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
+        app:layout_constraintStart_toStartOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/cuadro2" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="309dp" />
+
+    <View
+        android:id="@+id/cuadro1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#039BE6"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintBottom_toTopOf="@id/cuadro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_welcome" />
+
+
+
+    <ImageView
+        android:id="@+id/futbol_imagen"
+        android:layout_width="52dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:src="@drawable/futbol"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro1"
+        app:layout_constraintEnd_toEndOf="@id/guide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cuadro1" />
+
+    <TextView
+        android:id="@+id/futbol_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="futbol"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/futbol_imagen"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide"/>
+
+
+    <ImageView
+        android:id="@+id/tennis_imagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:src="@drawable/tennis"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro1"
+        app:layout_constraintEnd_toEndOf="@id/guide1"
+        app:layout_constraintStart_toStartOf="@id/guide"
+        app:layout_constraintTop_toTopOf="@id/cuadro1" />
+
+    <TextView
+        android:id="@+id/tennis_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tennis"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="@id/cuadro1"
+        app:layout_constraintEnd_toEndOf="@id/guide1"
+        app:layout_constraintStart_toStartOf="@id/guide"
+        app:layout_constraintBottom_toTopOf="@id/tennis_imagen"/>
+
+    <ImageView
+        android:id="@+id/baloncesto_imagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:src="@drawable/baloncesto"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintTop_toTopOf="@id/cuadro1" />
+
+    <TextView
+        android:id="@+id/baloncesto_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="baloncesto"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro1"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"/>
+
+    <ImageView
+        android:id="@+id/beisbol_imagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:src="@drawable/beisbol"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guide2"
+        app:layout_constraintTop_toTopOf="@id/cuadro1" />
+
+    <TextView
+        android:id="@+id/beisbol_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="béisbol"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="@id/cuadro1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guide2" />
+
+
+    <View
+        android:id="@+id/cuadro2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#039BE6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cuadro1" />
+
+    <ImageView
+        android:id="@+id/natacion_imagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:src="@drawable/natacion"
+        app:layout_constraintTop_toTopOf="@id/cuadro2"
+        app:layout_constraintEnd_toEndOf="@id/guide"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/natacion_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="natacion"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guide"/>
+
+
+
+    <ImageView
+        android:id="@+id/esquiador_imagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:src="@drawable/esquiador"
+        app:layout_constraintTop_toTopOf="@id/cuadro2"
+        app:layout_constraintEnd_toEndOf="@id/guide1"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro2"
+        app:layout_constraintStart_toStartOf="@id/guide"/>
+
+    <TextView
+        android:id="@+id/esquiador_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="esquiador"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="@id/cuadro2"
+        app:layout_constraintStart_toStartOf="@id/guide"
+        app:layout_constraintEnd_toEndOf="@id/guide1" />
+
+    <ImageView
+        android:id="@+id/atletismo_imagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:src="@drawable/atletismo"
+        app:layout_constraintTop_toTopOf="@id/cuadro2"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro2"
+        app:layout_constraintStart_toStartOf="@id/guide1"/>
+
+    <TextView
+        android:id="@+id/atletismo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="atletismo"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro2"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"/>
+
+    <ImageView
+        android:id="@+id/voleibol_imagen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:src="@drawable/voleybol"
+        app:layout_constraintTop_toTopOf="@id/cuadro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/cuadro2"
+        app:layout_constraintStart_toStartOf="@id/guide2"/>
+
+    <TextView
+        android:id="@+id/voleibol_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="voleibol"
+        android:textStyle="bold"
+        android:textColor="#0C054D"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="@id/cuadro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guide2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
